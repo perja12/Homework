@@ -9,6 +9,8 @@ public class User {
     private static Scanner scanner = new Scanner(System.in);
 
     public static int getInt(String message) {
+        // Per Thomas: as pointed out this code is very similar to the other getInt method.
+        // In this method cou can just call the other getInt like this: getInt(message, Integer.MIN_VALUE, Integer.MAX_VALUE);
         do {
             System.out.print(message);
             String userInput = scanner.next();
